@@ -1,5 +1,5 @@
 const API_KEY = '1888c41a'
-const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&`
+const BASE_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&`
 
 const searchParams = new URLSearchParams(window.location.search)
 
