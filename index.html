@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie Finder</title>
+</head>
+<body>
+    <header class="center">
+        <a href="index.html">
+            Movie Finder
+        </a>
+    </header>
+    <form class="form center" name="searchMovieForm">
+        <input class="form__input" type="text" name="query" placeholder="Enter movie title">
+        <button class="form__btn material-symbols-outlined">
+            search
+        </button>
+    </form>
+    <main class="center">
+        <section class="search-results">
+            <div class="recently">
+
+            </div>
+            <h1>
+                Search results for: <span class="query"></span>
+            </h1>
+        </section>
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
