@@ -3,7 +3,7 @@ const API_KEYS = {
     Websocket: '0d87814fbb4cc50baf748af1d2e89aa7'
 }
 const BASE_URLS = {
-    MovieFinderUrl: `http://www.omdbapi.com/?apikey=${API_KEYS.Movie}&`,
+    MovieFinderUrl: `https://www.omdbapi.com/?apikey=${API_KEYS.Movie}&`,
     ChatSocketUrl: `wss://socketsbay.com/wss/v2/1/${API_KEYS.Websocket}/`
 }
 const results = document.querySelector('.search-results')
@@ -13,7 +13,7 @@ let isStarting = false
 let timer
 let counter = 0
 
-const websocket = new WebSocket(BASE_URLS.ChatSocketUrl);
+let websocket = new WebSocket(BASE_URLS.ChatSocketUrl);
 let log = results.querySelector('.recently')
 
 const searchForm = document.forms.searchMovieForm
