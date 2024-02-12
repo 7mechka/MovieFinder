@@ -78,6 +78,9 @@ function createMessage (msg) {
 websocket.onmessage = function(event) {
     log.innerHTML += createMessage(event.data)
 };
+websocket.onopen = function(event) {
+    
+}
 
 function chatPage() {
     window.location.href = 'https://7mechka.github.io/Websocket-Chat/'
